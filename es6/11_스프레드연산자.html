@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Document</title>
+    <script>
+        const arr =['고양이','사자','호랑이']
+        const arr1 = arr.concat() 
+        const arr2 = arr.concat('뱀','도마뱀','악어')
+
+        const arr3 = [...arr]
+        const arr4 = [ ...arr, '붕어' ,'금붕어','기린' ]
+
+        console.log( arr )
+        console.log( arr1 )
+        console.log( arr2 )
+        console.log( '===================' )
+        console.log( arr3 )
+        console.log( arr4 )
+        console.log( '===================' )
+        const man = {
+            name:'홍길동' , age: 20, addr:'서울'
+        }
+        //이름 갱신, 변경, 수정
+        const man1 = {
+            ...man ,
+            name : '김다미' 
+        }
+        console.log( man1 )
+
+        const man2 = {
+            ...man ,
+            name:'최우식' , age : 25 , addr:'제주'
+        }
+        console.log( man2 )
+
+
+        const data = [
+            {id:1, name:'강호동'},
+            {id:2, name:'김다미'},
+            {id:3, name:'최우식'},
+            {id:4, name:'송혜교'},
+            {id:5, name:'전지현'},
+        ]
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

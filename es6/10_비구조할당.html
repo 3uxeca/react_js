@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Document</title>
+    <script>
+        let data1 = {
+            name:'홍길동' ,
+            age : 20 ,
+            addr: '서울' ,
+            tel :'010-0000-1111'
+        }
+        //data1.name , data1.age 
+        //구조분해 , 비구조할당 
+        const { name , age, addr, tel } = data1 
+        console.log( name , age , addr , tel )
+
+        let data2 = {
+            a :10 ,
+            b : 20
+        }
+        //data2.a  , data2.b 
+        const { a , b } = data2
+        console.log( a , b )
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

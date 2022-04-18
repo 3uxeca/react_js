@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Document</title>
+    <script>
+        const arr1 = [ 10,20,30,40,50 ]
+        // 배열.filter( 현재값  => 조건식 ) => 결과 []형식
+        const arr2 = arr1.filter( item => item > 30 )
+        console.log( arr2 )
+
+        const arr3 = arr1.filter( item => item === 40 )
+        console.log( arr3 )
+
+        //30을 뺀 나머지만 출력 ? 
+        const arr4 = arr1.filter( item => item !== 30 )
+        console.log( arr4 )
+
+        const data = [
+            {id:1, name:'강호동'},
+            {id:2, name:'김다미'},
+            {id:3, name:'최우식'},
+            {id:4, name:'송혜교'},
+            {id:5, name:'전지현'},
+        ]
+        // id값이 3이상인결과 출력 
+        const data1 = data.filter( item => item.id > 3 )
+        console.log( data1 )
+
+        // id가 4인 값을 제거한 나머지만 출력 
+        const data2 = data.filter( item => item.id !== 4)
+        console.log( data2 )
+
+        const dog  = {
+            name :'치와와' ,
+            age :3 
+        }
+        console.log( dog.name , dog.age )
+        console.log( dog['name'] , dog['age'] )
+        //객체.키 , 객체['키']
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

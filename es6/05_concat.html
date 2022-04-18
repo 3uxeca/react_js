@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Document</title>
+    <script>
+        const arr= [10,20,30,40]
+        arr.push(50)
+        arr.push(60)
+        arr.push(70)
+        // 원본이 바뀐다 
+        console.log ( arr )
+
+        const arr1 = [10,20,30,40]
+        // 사본 
+        const data1 = arr1.concat() 
+        // 데이터추가 
+        const data2 = arr1.concat(50,60,70)
+        console.log ( '=============')
+        console.log ( arr1 )
+        console.log ( data1 )
+        console.log ( data2 )
+
+        const data = [
+            {id:1 , name:'홍길동'},
+            {id:2 , name:'강호동'},
+            {id:3 , name:'송혜교'},
+        ]
+
+        const da1 = data.concat() 
+        const da2 = data.concat({id:4 , name:'김다미'})
+        console.log ( '=============') 
+        console.log ( da1 ) 
+        console.log ( da2 ) 
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+    <div id="root">화면에보이는영역</div>
+
+    <script type="text/babel">
+        //createElement(태그,속성,내용)
+        const el = React.createElement('h1',{},'제목1입니다.')
+        const dom = document.querySelector('#root')
+
+        ReactDOM.render( el , dom )
+        // render  : 화면에 그려줌 
+        // rendering : 코드가 눈으로 볼수 있도록 화면에 그려줌        
+    </script>
+</body>
+</html>

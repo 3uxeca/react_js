@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Document</title>
+    <script>
+        //JSX  -> for, forEach , 등 X 반복문 
+        // map : 반복문
+        /*
+            객체.map( (현재값 , 인덱스 )  => {
+                return ( 값 )
+            })
+        */
+        const arr1 = [10,20,30,40,50]
+        arr1.map( (item , idx ) => {
+            return ( console.log( idx , item ))
+        })   
+        console.log('================' )
+        //결과가 한줄일때 
+        arr1.map( ( item, idx ) => console.log( idx, item ) )
+
+        const data = [
+            {id:1 , name:'강호동1'},
+            {id:2 , name:'강호동2'},
+            {id:3 , name:'강호동3'},
+            {id:4 , name:'강호동4'},
+            {id:5 , name:'강호동5'},
+        ]
+
+        data.map( (item , index) => {
+            return ( console.log( item.id , item.name ))
+        })
+        console.log('================' )
+        data.map( (item, index) => console.log( item.id , item.name ))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

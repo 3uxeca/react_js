@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Document</title>
+    <script>
+        const arr1 = ['수박','옥수수','과자','딸기','수수','감자','고구마']
+        const txt1  = '수'
+        // filter + indexOf
+        const result1 = arr1.filter( item => item.indexOf( txt1 )  > -1 )
+        console.log( result1 )
+        const result2 = arr1.filter( item => item.indexOf( txt1 )  !== -1 )
+        console.log( result2 )
+
+        const data = [
+            {text:'친구와 영화를 보다'},
+            {text:'엄마와 저녁먹기'},
+            {text:'즐거운 토요일'},
+            {text:'수영하는 영화'},
+            {text:'집에서 영화보기'},
+            {text:'가족모임'},
+        ]
+        const txt2 = '영화'
+        const data1  = data.filter( item => item.text.indexOf(txt2) > -1 )
+        console.log( data1 )
+        
+        const data2  = data.filter( item => item.text.indexOf(txt2) !== -1 )
+        console.log( data2 )
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

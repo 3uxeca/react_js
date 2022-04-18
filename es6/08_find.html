@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Document</title>
+    <script>
+        const arr1 = [ 10,20,30,40,50 ]         
+        const data = [
+            {id:1, name:'강호동'},
+            {id:2, name:'김다미'},
+            {id:3, name:'최우식'},
+            {id:4, name:'송혜교'},
+            {id:5, name:'전지현'},
+        ]
+         
+        //find : 결과1 개만 , 결과 값만 
+        //배열.find( 현재값  => 조건 )
+
+        const arr2 = arr1.find( item => item  > 20 )
+        console.log( arr2 )
+
+        const arr3 = arr1.find( item => item === 20 )
+        console.log( arr3 )
+
+        const data1  = data.find( item => item.id === 2 )
+        console.log( data1 )
+        //findIndex 
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+.box {
+    width: 250px; height: 100px;
+    border: 2px solid yellow;
+    margin: 15px;
+    background: tomato;
+}
+.size {
+    width: 200px; height: 200px; border-radius: 50px; margin: 15px;
+}
+.bg {
+    background: lime;
+}
+/* module에서 일반 클래스로 처리됨 */
+:global .mybox {
+    background: hotpink;
+    width: 150px; height: 80px; 
+    margin: 10px;
+}

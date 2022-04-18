@@ -1,0 +1,4 @@
+.box {
+    width: 300px; height: 80px; margin: 20px;background: green; border-radius: 25px;
+    box-shadow:inset 10px 10px 10px #dcdcdc; text-align: center; line-height: 80px;text-transform: uppercase; font-size: 40px; font-weight: 600; letter-spacing: -1px;
+}
